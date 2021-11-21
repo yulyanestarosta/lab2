@@ -58,32 +58,4 @@ public:
         return out;
     }
 };
-// // протестируем
-//int main() {
-//    Grid<int> g1(3, 2);
-//    g1 = 1;
-//    cout << g1;
-//    cout << endl;
-//    cout << g1(1, 1);
-//    cout << endl;
-//    g1(3, 1) = 0;
-//    cout << endl;
-//    cout << g1;
-//    cout << endl;
-//
-//    Grid<int> g_in(2, 3);
-//    cout << "Введите элементы";
-//    cout << endl;
-//    cin >> g_in;
-//    cout << endl;
-//    cout << g_in;
-//    cout << endl;
-//
-//    Grid<int> copy1(g1);
-//    cout << copy1;
-//    copy1(2, 2) = 0;
-//    cout << endl;
-//    cout << copy1;
-//    cout << endl;
-//    cout << g1;
-//}
+
