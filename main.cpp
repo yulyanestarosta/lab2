@@ -42,14 +42,14 @@ public:
     }
 
     friend istream& operator>>(istream& in, Grid& grid) { //ввод
-        for (T i = 0; i != grid.y_size*grid.x_size; i++) {
+        for (int i = 0; i != grid.y_size*grid.x_size; i++) {
             in >> grid.mem[i];
         }
         return in;
     }
     friend ostream& operator<<(ostream& out, Grid const& grid) { //вывод
-        for (T i = 1; i != grid.y_size+1; i++) {
-            for (T j = 1; j != grid.x_size+1; j++) {
+        for (int i = 1; i != grid.y_size+1; i++) {
+            for (int j = 1; j != grid.x_size+1; j++) {
                 out << grid.mem[(j - 1) + grid.x_size*(i-1)] << ' ';
             }
             out << std::endl;
