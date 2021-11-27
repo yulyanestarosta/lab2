@@ -52,7 +52,7 @@ public:
             for (int j = 1; j != grid.x_size+1; j++) {
                 out << grid.mem[(j - 1) + grid.x_size*(i-1)] << ' ';
             }
-            out << std::endl;
+            out << endl;
         }
 
         return out;
