@@ -34,7 +34,7 @@ public:
         return mem[(x_idx - 1) + x_size * (y_idx - 1)];
     }
 
-    Grid& operator=(T inp) {  //замена
+    Grid& operator=(int inp) {  //замена
         for (size_t pos = 0; pos != x_size * y_size; ++pos) {
             mem[pos] = inp;
         }
